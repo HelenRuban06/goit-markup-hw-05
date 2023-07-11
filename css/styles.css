@@ -419,6 +419,8 @@ background-color: #404bbf;
     height: 56px;
 }
 /*------------FOOTER---------*/
+
+/* ----------FOOTER LOGO----- */
 .footer {
 background: var(--color-two);
 padding: 100px 0;
@@ -464,6 +466,8 @@ padding: 100px 0;
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+
+/* --------FOOTER SOCIAL------ */
 .footer-social {
     font-weight: 500;
     font-size: 16px;
@@ -521,6 +525,66 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 8px;
     border-radius: 50%;
 }
+/* --------FOOTER FORM------ */
+
+.footer-container-field {
+    margin-left: 80px;
+}
+
+.footer-container-title {
+    color: var(--background-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.footer-container-form {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 0;
+    gap: 24px;
+}
+
+.footer-container-label {
+    
+}
+
+.footer-container-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--background-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    padding-bottom: 8px;
+    background-color: #2E2F42;
+
+    
+}
+
+.footer-container-button {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background:#4D5AE5;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+
+    position: relative;
+}
+
+.footer-container-icon {
+fill: var(--background-color);
+position: absolute;
+}
 
 /*-----------PORTFOLIO---------*/
 .section-portfolio {
@@ -542,9 +606,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid var(--color-button);
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .second-link:hover,
@@ -712,7 +776,7 @@ transform: translateY(0%);}
 .button-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* ----------MODAL FORM---------- */
 .modal-form-strong{
     display: flex;
     flex-direction: column;
@@ -729,32 +793,27 @@ transform: translateY(0%);}
     color: #2E2F42;
 }
 form{
-margin: 64px 24px 136px 24px;
-}
-input {
-    display: flex;
-    width: 360px;
-    height: 58px;
-  margin-bottom: 8px;
+margin: 64px 24px 24px 24px;
 }
 
 .modal-form-field {
     position: relative;
     display: block;
     margin-bottom: 8px;
+
 }
 
 .modal-form-title{
     display: block;
-    font-family: Roboto;
+    margin-bottom: 4px;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.48px;
     color: #8E8F99;
 }
 .modal-form-input {
+    display: flex;
     padding: 11px 38px;
     height: 40px;
     width: 100%;
@@ -781,7 +840,7 @@ input {
 .modal-form-comment {
     width: 100%;
     height: 120px;
-    margin-bottom: 56px;
+    margin-bottom: 16px;
     padding: 8px 16px;
     resize: none;
     font-size: 12px;
@@ -798,4 +857,48 @@ input {
 
 .modal-form-comment::placeholder {
 color: currentColor;   
+}
+
+.modal-form-agreement {
+display: flex;
+align-items: center;
+margin-bottom: 24px;
+gap: 8px;
+}
+
+
+.modal-form-custom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox{
+border-color: #404BBF;
+background-color: #404BBF;
+}
+.modal-form-checkbox-icon {
+    opacity: 0;
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox > .modal-form-checkbox-icon{
+    opacity: 1;
+}
+
+.modal-form-text {
+    color: #8E8F99;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    user-select: none;
+}
+
+.modal-form-link {
+    color: #4D5AE5;
+    text-decoration: underline;
 }
