@@ -572,7 +572,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-container-button {
     display: flex;
     padding: 8px 24px;
-    gap: 16px;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
@@ -592,6 +591,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container-icon {
+    margin-left: 16px;
 fill: var(--background-color);
 }
 
@@ -895,7 +895,7 @@ gap: 8px;
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
-    gap: 8px;
+    margin-right: 8px;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -920,9 +920,6 @@ fill: var(--color-three);
     letter-spacing: 0.04em;
     color: var(--color-customers);
     user-select: none;
-    display: flex;
-    gap: 8px;
-    align-items: center;
 }
 
 .modal-form-link {
